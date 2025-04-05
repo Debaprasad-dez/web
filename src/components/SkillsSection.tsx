@@ -6,24 +6,24 @@ import { useTheme } from "../providers/ThemeProvider";
 const expertiseAreas = [
   {
     icon: Monitor,
-    title: "Software",
+    title: "Frontend",
     subtitle: "Development",
     titleColor: "#ff58a7", // Pink color
-    description: "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript."
+    description: "Over 3 years of development experience in HTML, CSS, JS, React and NextJS frameworks."
   },
   {
     icon: Code,
-    title: "Frontend Dev",
-    subtitle: "React, NextJS",
+    title: "Backend",
+    subtitle: "Development",
     titleColor: "#6a89ff", // Blue color
-    description: "Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and NextJS frameworks."
+    description: "Skilled in building secure, scalable backend systems with Spring Boot, Node.js, and Python."
   },
   {
     icon: Smartphone,
-    title: "Flutter Dev",
-    subtitle: "Android, iOS",
+    title: "Product",
+    subtitle: "Design",
     titleColor: "#ff5e3a", // Orange color
-    description: "Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework."
+    description: "Passionate about intuitive UI/UX design, skilled in Figma and illustration for user-centric products."
   }
 ];
 

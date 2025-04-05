@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
   ].filter(Boolean),
-  base: "/web",
+  base: "/myweb",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

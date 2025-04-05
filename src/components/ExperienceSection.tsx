@@ -8,23 +8,23 @@ import comviva from "../assets/comviva.svg";
 const experiences = [
   {
     id: 1,
-    period: '2024 — Present',
-    role: 'Senior Frontend Engineer',
-    company: 'TechCorp Inc.',
-    companyUrl: 'https://example.com',
+    period: '2023 — Present',
+    role: 'Senior Engineer',
+    company: 'Comviva',
+    companyUrl: 'https://www.comviva.com/',
     logo: comviva,
-    description: 'Build and maintain critical components used to construct the frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
-    skills: ['JavaScript', 'TypeScript', 'React', 'Next.js']
+    description: 'Developed a high-performance banking transaction UI within a Micro Frontend architecture, boosting app load speed by 40% and delivering a seamless user experience. Built a robust bank transfer module with real-time balance validation, managing over ₹100 crore in monthly transactions. Integrated REST and GraphQL APIs with effective caching to reduce response times by 25%. Automated CI/CD pipelines using Jenkins, cutting deployment time by 50%, and improved code reliability by increasing test coverage to 90% using Jest, Cypress, and React Testing Library.',
+    skills: ['JavaScript', 'TypeScript', 'React', 'Next.js','Redux','Angular','mongodb','payment gateway','graphql']
   },
   {
     id: 2,
-    period: '2020 — 2024',
-    role: 'Lead Engineer',
-    company: 'WebSolutions',
-    companyUrl: 'https://example.com',
+    period: '2021 — 2023',
+    role: 'Product Development Engineer',
+    company: 'Comviva',
+    companyUrl: 'https://www.comviva.com/',
     logo: comviva,
-    description: 'Built, styled, and shipped high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including major corporations. Provided leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.',
-    skills: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'HTML & SCSS']
+    description: 'Built reusable UI components to ensure design consistency and reduce development time by 35%. Optimized state management using Redux, cutting down unnecessary API calls by 30% and boosting overall performance. Improved API response times by 20% through efficient data handling strategies. Streamlined deployments and ensured high availability by deploying and managing Jenkins and Nginx.',
+    skills: ['JavaScript', 'TypeScript','Linux','sql','postgressql']
   }
 ];
 

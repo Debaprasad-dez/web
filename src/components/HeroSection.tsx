@@ -16,7 +16,7 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
   const { theme } = useTheme();
   const [animationComplete, setAnimationComplete] = useState(false);
-  
+  const [isOpen, setIsOpen] = useState(false);
   // Handle mouse movement for 3D effect
   useEffect(() => {
     if (isMobile) return;
@@ -174,6 +174,14 @@ const HeroSection = () => {
     
     return () => clearInterval(typeTimer);
   }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    setIsOpen(false);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   // Mobile specific layout
   if (isMobile) {
@@ -353,7 +361,7 @@ const HeroSection = () => {
                 <span className="absolute inset-0 w-full h-full bg-white/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700"></span>
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-modern-primary to-modern-depth opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-lg"></span>
                 
-                <span className="relative z-10">Let's Connect</span>
+                <span className="relative z-10" onClick={() => scrollToSection('contact')}>Let's Connect</span>
                 <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
             </div>

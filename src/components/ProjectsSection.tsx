@@ -4,74 +4,80 @@ import { ExternalLink, Code, Eye, X, ChevronLeft, ChevronRight } from 'lucide-re
 import { motion, AnimatePresence } from 'framer-motion';
 import { useIsMobile } from '../hooks/use-mobile';
 import { useTheme } from '../providers/ThemeProvider';
+import op7t from '../assets/op7t.png'
+import pourfolio from '../assets/pourfolio.png'
+import bodivue from '../assets/bodivue.png'
+import ThoughtTag from '../assets/ThoughtTag.png'
+import CheersPass from '../assets/CheersPass.png'
+import billxo from '../assets/billxo.png'
 
 // Project data
 const projects = [
   {
     id: 1,
-    title: 'Flight Local (B2B Travel Solution)',
-    category: 'Web Development',
-    description: 'A modern e-commerce platform built with React, Next.js, and Stripe integration for seamless payment processing.',
-    longDescription: 'This comprehensive e-commerce solution features advanced product filtering, real-time inventory management, seamless payment processing with Stripe, and a headless CMS integration. The platform includes user authentication, personalized recommendations, and a responsive design optimized for all devices.',
-    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&fit=crop',
+    title: 'CheersPass - The Event Ticketing Platform',
+    category: ' an event ticketing platform that allows users to create, manage, and sell tickets for events',
+    description: 'an event ticketing platform that allows users to create, manage, and sell tickets for events.',
+    longDescription: 'A modern event ticketing platform that allows users to create, manage, and sell tickets for events. The platform includes features like QR code scanning, real-time analytics, and user-friendly interfaces for both organizers and attendees.',
+    image: CheersPass,
     tags: ['React', 'Next.js', 'Stripe', 'Tailwind CSS'],
     liveUrl: '#',
     codeUrl: '#',
   },
   {
     id: 2,
-    title: 'AI Lab Granada',
+    title: 'Bodivue - Personal health and diet management platform',
     category: 'Web Development',
-    description: 'A comprehensive admin dashboard with advanced data visualization, user management, and real-time analytics.',
-    longDescription: 'This feature-rich admin dashboard provides a powerful interface for business analytics and management. It includes customizable widgets, interactive charts, role-based access control, and real-time data updates. The dashboard is built with performance in mind, using efficient data fetching patterns and optimized rendering.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop',
+    description: 'personal health and diet management platform that helps users track their fitness goals and nutrition.',
+    longDescription: 'A personal health and diet management platform that helps users track their fitness goals and nutrition. The platform includes features like meal planning, exercise tracking, and personalized recommendations based on user data. It aims to promote a healthier lifestyle through data-driven insights and community support.',
+    image: bodivue,
     tags: ['React', 'TypeScript', 'Redux', 'Chart.js'],
-    liveUrl: '#',
-    codeUrl: '#',
+    liveUrl: 'https://debaprasad-dez.github.io/bodivue/',
+    codeUrl: 'https://github.com/Debaprasad-dez/bodivue',
   },
   {
     id: 3,
-    title: 'Khora – Urban Thinkers Company',
+    title: 'ThoughtTag – A sticky notes application',
     category: 'Web Development',
-    description: 'A secure and intuitive mobile banking application with biometric authentication and transaction tracking.',
-    longDescription: 'This mobile banking application prioritizes security and user experience, featuring biometric authentication, real-time transaction notifications, and comprehensive financial management tools. Users can manage accounts, transfer funds, pay bills, and analyze spending habits through intuitive visualizations. The app includes dark mode support and accessibility features.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&fit=crop',
-    tags: ['React Native', 'Firebase', 'Jest', 'Styled Components'],
+    description: 'sticky notes application that allows users to create, organize, and share notes visually.',
+    longDescription: 'This web application provides a digital canvas for users to create, organize, and share sticky notes. It features drag-and-drop functionality, color-coded notes, and collaborative editing. Users can categorize notes, set reminders, and integrate with calendar applications. The app is designed for both personal and team use, enhancing productivity and organization.',
+    image: ThoughtTag,
+    tags: ['React','canvas API'],
     liveUrl: '#',
     codeUrl: '#',
   },
   {
     id: 4,
-    title: 'Tryotel – Cross-Platform Travel App',
+    title: 'OP7T – A product website for my phone',
     category: 'App Development',
-    description: 'An AI-powered content generation tool that helps marketers create engaging articles and social media posts.',
-    longDescription: 'This innovative AI tool leverages advanced language models to generate high-quality marketing content across various formats. Features include tone customization, SEO optimization, multi-language support, and integration with popular CMS platforms. The application includes a user-friendly editor with real-time suggestions and a collaborative workspace for teams.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&fit=crop',
-    tags: ['React Native', 'Flutter', 'Firebase', 'AWS'],
-    liveUrl: '#',
-    codeUrl: '#',
+    description: 'Website for my phone that showcases its features and specifications.',
+    longDescription: 'portfolio website for my phone that showcases its features and specifications.',
+    image: op7t,
+    tags: ['React ','fullpage.js'],
+    liveUrl: 'https://debaprasad-dez.github.io/op7t/',
+    codeUrl: 'https://github.com/Debaprasad-dez?tab=repositories&q=op7&type=&language=&sort=',
   },
   {
     id: 5,
-    title: 'Tapy – Download. Connect. Pay.',
+    title: 'Pourfolio - Personal Tasting Journal & Party Companion',
     category: 'Web Development',
-    description: 'A comprehensive fitness application that tracks workouts, nutrition, and provides personalized coaching.',
-    longDescription: 'This all-in-one fitness platform helps users achieve their health goals through personalized workout plans, nutrition tracking, and progress visualization. The app features workout libraries with video demonstrations, customizable meal plans, integration with fitness wearables, and social challenges to boost motivation. The platform adapts to user preferences and progress over time.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&fit=crop',
-    tags: ['React', 'Firebase', 'TensorFlow.js', 'PWA'],
-    liveUrl: '#',
-    codeUrl: '#',
+    description: 'Tasting journal and party companion that helps users track their drinking experiences',
+    longDescription: 'tasting journal and party companion that helps users track their beverage experiences',
+    image: pourfolio,
+    tags: ['React', 'PWA'],
+    liveUrl: 'https://debaprasad-dez.github.io/pourfolio/',
+    codeUrl: 'https://github.com/Debaprasad-dez/pourfolio',
   },
   {
     id: 6,
-    title: 'Real-time Collaboration Tool',
+    title: 'Billxo - Your own invoicing platform',
     category: 'Web Development',
-    description: 'A collaborative workspace that allows teams to work together on documents and projects in real-time.',
-    longDescription: 'This powerful collaboration tool enables seamless teamwork through real-time document editing, task management, and integrated communication channels. The platform includes version history, access controls, commenting features, and integrations with popular productivity tools. Performance optimizations ensure a smooth experience even with many concurrent users.',
-    image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&fit=crop',
-    tags: ['WebSockets', 'React', 'Node.js', 'MongoDB'],
-    liveUrl: '#',
-    codeUrl: '#',
+    description: 'A invoicing platform that allows users to create, manage, and send invoices easily.',
+    longDescription: 'A modern invoicing platform that allows users to create, manage, and send invoices easily. The platform includes features like customizable templates, payment tracking, and real-time analytics.',
+    image: billxo,
+    tags: ['WebSockets', 'React', 'localStorage'],
+    liveUrl: 'https://debaprasad-dez.github.io/Billxo/',
+    codeUrl: 'https://github.com/Debaprasad-dez/Billxo',
   },
 ];
 
@@ -180,7 +186,7 @@ const ProjectsSection = () => {
               <motion.div 
                 key={project.id}
                 className={`${isMobile ? 'flex-shrink-0 w-full snap-center mr-6 last:mr-0' : 
-                  isLarge ? 'row-span-2 col-span-1' : 
+                  isLarge ? 'col-span-1' : 
                   isMedium ? 'col-span-1' : 
                   isSmall ? 'col-span-1' : ''} 
                   flex flex-col overflow-hidden h-full`}
@@ -204,6 +210,7 @@ const ProjectsSection = () => {
                     <div className={`absolute inset-0 bg-portfolio-black/60 flex items-center justify-center gap-4 transition-opacity ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                       <motion.a 
                         href={project.liveUrl} 
+                        target='_blank'
                         className="flex items-center justify-center space-x-2 px-4 py-2 bg-portfolio-khaki text-portfolio-black rounded-lg hover:bg-portfolio-almond transition-colors"
                         whileHover={{ y: -2 }}
                       >
@@ -212,6 +219,7 @@ const ProjectsSection = () => {
                       </motion.a>
                       <motion.a 
                         href={project.codeUrl} 
+                        target='_blank'
                         className="flex items-center justify-center space-x-2 px-4 py-2 border border-portfolio-almond/30 text-portfolio-almond rounded-lg hover:bg-portfolio-walnut/20 transition-colors"
                         whileHover={{ y: -2 }}
                       >
@@ -224,7 +232,7 @@ const ProjectsSection = () => {
                   {/* Project Title and Category */}
                   <div className="mt-4">
                     <h3 className={`text-xl font-semibold ${theme === 'light' ? 'text-portfolio-gunmetal' : 'text-portfolio-almond'}`}>{project.title}</h3>
-                    <p className={`text-sm ${theme === 'light' ? 'text-portfolio-gunmetal/60' : 'text-portfolio-almond/60'}`}>{project.category}</p>
+                    <p className={`text-sm ${theme === 'light' ? 'text-portfolio-gunmetal/60' : 'text-portfolio-almond/60'}`}>{project.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -294,6 +302,7 @@ const ProjectsSection = () => {
                   
                   <div className="flex space-x-4">
                     <a 
+                    target='_blank'
                       href={projects.find(p => p.id === selectedProject)?.liveUrl} 
                       className="flex items-center justify-center space-x-2 px-4 py-2 bg-portfolio-khaki text-portfolio-black rounded-lg hover:bg-portfolio-almond transition-colors"
                     >

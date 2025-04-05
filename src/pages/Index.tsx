@@ -34,7 +34,7 @@ const Index = () => {
         ? 'bg-white text-portfolio-gunmetal' 
         : 'bg-portfolio-black text-portfolio-almond'
     }`}>
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       <NavBar />
       <HeroSection />
       <SkillsSection />

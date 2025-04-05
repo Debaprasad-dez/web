@@ -132,7 +132,7 @@ const NavBar = () => {
 
             {/* Resume Button */}
             <motion.a 
-              href="/resume.pdf" 
+              href="/myweb/resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hidden md:block px-5 py-2.5 bg-transparent border border-portfolio-khaki text-portfolio-khaki font-medium rounded-full hover:bg-portfolio-khaki/10 transition-all"
@@ -200,7 +200,7 @@ const NavBar = () => {
                 index={3}
               />
               <motion.a 
-                href="/resume.pdf" 
+                href="/myweb/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block w-full text-center px-5 py-2.5 bg-transparent border border-portfolio-khaki text-portfolio-khaki font-medium rounded-full transition-all"

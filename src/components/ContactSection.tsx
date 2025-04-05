@@ -93,7 +93,7 @@ const ContactSection = () => {
             
             <div className="flex space-x-4">
               <motion.a 
-                href="#" 
+                href="https://github.com/Debaprasad-dez" 
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${
                   theme === 'light'
                     ? 'border border-portfolio-gunmetal/30 hover:bg-portfolio-khaki/20' 
@@ -105,7 +105,7 @@ const ContactSection = () => {
                 <Github className={`w-5 h-5 ${theme === 'light' ? 'text-portfolio-gunmetal' : 'text-portfolio-almond'}`} />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/in/debaprasad-paul/" 
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${
                   theme === 'light'
                     ? 'border border-portfolio-gunmetal/30 hover:bg-portfolio-khaki/20' 
@@ -116,18 +116,7 @@ const ContactSection = () => {
               >
                 <Linkedin className={`w-5 h-5 ${theme === 'light' ? 'text-portfolio-gunmetal' : 'text-portfolio-almond'}`} />
               </motion.a>
-              <motion.a 
-                href="#" 
-                className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                  theme === 'light'
-                    ? 'border border-portfolio-gunmetal/30 hover:bg-portfolio-khaki/20' 
-                    : 'border border-portfolio-walnut/50 hover:bg-portfolio-khaki/20'
-                } hover:border-portfolio-khaki transition-all duration-300`}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Twitter className={`w-5 h-5 ${theme === 'light' ? 'text-portfolio-gunmetal' : 'text-portfolio-almond'}`} />
-              </motion.a>
+              
             </div>
           </div>
           
